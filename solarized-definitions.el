@@ -262,6 +262,19 @@ will use the 256 degraded color mode."
          ;; Flymake
          (flymake-errline ((t (:background ,orange))))
          (flymake-warnline ((t (:background ,violet))))
+         ;; flyspell
+         (flyspell-duplicate ((t (:inherit font-lock-warning-face))))
+         (flyspell-incorrect ((t (:inherit font-lock-warning-face))))
+         ;; rcirc
+         (rcirc-bright-nick ((t (:foreground ,cyan))))
+         (rcirc-my-nick ((t (:foreground ,base3))))
+         (rcirc-nick-in-message ((t (:foreground ,base2))))
+         (rcirc-nick-in-message-full-line ((t (:foreground ,base2))))
+         (rcirc-other-nick ((t (:inherit default))))
+         (rcirc-prompt ((t (:foreground ,base3))))
+         (rcirc-server ((t (:foreground ,base01))))
+         (rcirc-server ((t (:foreground ,base01))))
+         (rcirc-track-nick ((t (:foreground ,red :bold t))))
          ;; whitespace
          (whitespace-empty ((t (:foreground ,red))))
          (whitespace-hspace ((t (:foreground ,orange))))
