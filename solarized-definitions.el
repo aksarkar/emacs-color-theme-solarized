@@ -270,7 +270,7 @@ will use the 256 degraded color mode."
          (rcirc-my-nick ((t (:foreground ,base3))))
          (rcirc-nick-in-message ((t (:foreground ,base2))))
          (rcirc-nick-in-message-full-line ((t (:foreground ,base2))))
-         (rcirc-other-nick ((t (:inherit default))))
+         (rcirc-other-nick ((t (:foreground ,base0))))
          (rcirc-prompt ((t (:foreground ,base3))))
          (rcirc-server ((t (:foreground ,base01))))
          (rcirc-server ((t (:foreground ,base01))))
