@@ -275,6 +275,11 @@ will use the 256 degraded color mode."
          (rcirc-server ((t (:foreground ,base01))))
          (rcirc-server ((t (:foreground ,base01))))
          (rcirc-track-nick ((t (:foreground ,red :bold t))))
+         ; python-mode
+         (py-builtins-face ((t (:foreground ,green))))
+         (py-decorators-face ((t (:foreground ,base0))))
+         (py-pseudo-keyword-face ((t (:foreground ,green))))
+         (py-XXX-tag-face ((t (:foreground ,red))))
          ;; whitespace
          (whitespace-empty ((t (:foreground ,red))))
          (whitespace-hspace ((t (:foreground ,orange))))
