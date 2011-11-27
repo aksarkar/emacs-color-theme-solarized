@@ -121,6 +121,7 @@ will use the 256 degraded color mode."
          (secondary-selection ((t (:background ,base02))))
          (trailing-whitespace ((t (:foreground ,red :inverse-video t))))
          (vertical-border ((t (:foreground ,base0))))
+         (variable-pitch ((t (:family "Segoe UI"))))
          ;; comint
          (comint-highlight-prompt ((t (:foreground ,blue))))
          ;; compilation
@@ -265,6 +266,18 @@ will use the 256 degraded color mode."
          ;; flyspell
          (flyspell-duplicate ((t (:inherit font-lock-warning-face))))
          (flyspell-incorrect ((t (:inherit font-lock-warning-face))))
+         ;; git
+         (git-status-face ((t (:inherit font-lock-warning-face))))
+         (git-unknown-face ((t nil)))
+         (git-unmerged-face ((t (:inherit font-lock-warning))))
+         (git-uptodate-face ((t (:inherit font-lock-comment))))
+         ;; wikipedia
+         (font-wikipedia-bold-face ((t (:inherit bold))))
+         (font-wikipedia-italic-face ((t (:inherit italic))))
+         (font-wikipedia-math-face ((t (:inherit font-lock-string-face))))
+         (font-wikipedia-string-face ((t (:inherit font-lock-string-face))))
+         (font-wikipedia-verbatim-face ((t (:inherit font-lock-keyword-face))))
+         (font-wikipedia-warning-face ((t (:inherit font-lock-warning))))
          ;; rcirc
          (rcirc-bright-nick ((t (:foreground ,cyan))))
          (rcirc-my-nick ((t (:foreground ,base3))))
@@ -275,11 +288,13 @@ will use the 256 degraded color mode."
          (rcirc-server ((t (:foreground ,base01))))
          (rcirc-server ((t (:foreground ,base01))))
          (rcirc-track-nick ((t (:foreground ,red :bold t))))
-         ; python-mode
+         ;; python-mode
          (py-builtins-face ((t (:foreground ,green))))
          (py-decorators-face ((t (:foreground ,base0))))
          (py-pseudo-keyword-face ((t (:foreground ,green))))
          (py-XXX-tag-face ((t (:foreground ,red))))
+         ;; js2-mode
+         (js2-warning-face ((t (:inherit font-lock-warning))))
          ;; whitespace
          (whitespace-empty ((t (:foreground ,red))))
          (whitespace-hspace ((t (:foreground ,orange))))
