@@ -321,6 +321,10 @@ in order to expand or compress the tonal range displayed."
            (flyspell-duplicate ((t (:inherit font-lock-warning-face))))
            (flyspell-incorrect ((t (:inherit font-lock-warning-face))))
            ;; git
+           (git-header-face ((t (:foreground ,blue :background ,back))))
+           (git-permission-face ((t (:foreground ,green :background ,back))))
+           (git-separator-face ((t (:inherit default))))
+           (git-mark-face ((t (:inherit font-lock-warning-face))))
            (git-status-face ((t (:inherit font-lock-warning-face))))
            (git-unknown-face ((t nil)))
            (git-unmerged-face ((t (:inherit font-lock-warning))))
