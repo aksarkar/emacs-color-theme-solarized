@@ -337,7 +337,7 @@ in order to expand or compress the tonal range displayed."
            (font-wikipedia-verbatim-face ((t (:inherit font-lock-keyword-face))))
            (font-wikipedia-warning-face ((t (:inherit font-lock-warning))))
            ;; rcirc
-           (rcirc-dim-nick ((t (:foreground ,base01))))
+           (rcirc-dim-nick ((t (:foreground ,base0))))
            (rcirc-bright-nick ((t (:foreground ,cyan))))
            (rcirc-my-nick ((t (:foreground ,base3))))
            (rcirc-nick-in-message ((t (:foreground ,base2))))
