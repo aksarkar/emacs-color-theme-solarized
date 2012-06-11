@@ -194,9 +194,11 @@ the \"Gen RGB\" column in solarized-definitions.el to improve them further."
              (menu ((t (,@fg-base0 ,@bg-base02))))
              (minibuffer-prompt ((t (,@fmt-bold ,@fg-cyan)))) ; Question
              (mode-line  ; StatusLine
-              ((t (,@fg-base1 ,@bg-base02))))
+              ((t (,@fg-base1 ,@bg-base02 :box nil))))
              (mode-line-inactive ; StatusLineNC
-              ((t (,@fg-base00 ,@bg-base02))))
+              ((t (,@fg-base00 ,@bg-base02 :box nil))))
+             (mode-line-buffer-id ((t (,@fmt-bold))))
+             (mode-line-emphasis ((t (,@fmt-bold))))
              (region ((t (,@fg-base0 ,@bg-base02)))) ; Visual
              (secondary-selection ((t (,@bg-base02))))
              (shadow ((t (,@fg-base01))))
