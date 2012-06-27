@@ -332,6 +332,14 @@ the \"Gen RGB\" column in solarized-definitions.el to improve them further."
              (outline-6 ((t (,@fmt-none ,@fg-base01))))
              (outline-7 ((t (,@fmt-none ,@fg-orange))))
              (outline-8 ((t (,@fmt-none ,@fg-violet))))
+             ;; speedbar
+             (speedbar-button-face ((t (,@fmt-none ,@fg-base1))))
+             (speedbar-directory-face ((t (,@fmt-none ,@fg-orange))))
+             (speedbar-file-face ((t (,@fmt-none ,@fg-green))))
+             (speedbar-highlight-face ((t (,@bg-base02))))
+             (speedbar-selected-face ((t (,@fmt-undr ,@fg-yellow))))
+             (speedbar-separator-face ((t (,@fmt-stnd))))
+             (speedbar-tag-face ((t (,@fmt-none ,@fg-blue))))
              ;; show-paren - MatchParen
              (show-paren-match ((t (,@fmt-bold ,@fg-cyan ,@bg-base02))))
              (show-paren-mismatch ((t (,@fmt-bold ,@fg-red ,@bg-base01))))
@@ -482,6 +490,7 @@ the \"Gen RGB\" column in solarized-definitions.el to improve them further."
              (whitespace-tab ((t (,@fg-base02))))
              (whitespace-trailing ((t (,@fmt-bold ,@fg-red ,@bg-base02))))
              (whitespace-highlight-face ((t (,@fg-red ,@bg-blue))))
+             (whitespace-line ((t (,@fg-magenta ,@bg-base03))))
              ;; rcirc
              (rcirc-bright-nick ((t (,@fg-cyan))))
              (rcirc-dim-nick ((t (,@fg-base0))))
