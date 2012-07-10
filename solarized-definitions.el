@@ -514,7 +514,10 @@ the \"Gen RGB\" column in solarized-definitions.el to improve them further."
              (git-status-face ((t (,@fg-red ,@fmt-bold))))
              (git-unknown-face ((t (,@fg-yellow))))
              (git-unmerged-face ((t (,@fg-red ,@fmt-bold))))
-             (git-uptodate-face ((t (,@fg-base0)))))
+             (git-uptodate-face ((t (,@fg-base0))))
+             ;; ace-jump
+             (ace-jump-face-background ((t (,@fmt-none ,@fg-base0 ,@bg-back))))
+             (ace-jump-face-foreground ((t (,@fmt-stnd ,@fg-orange ,@bg-back)))))
 
             ((foreground-color . ,(when (<= 16 (display-color-cells)) base0))
              (background-color . ,back)
