@@ -48,6 +48,12 @@ the \"Gen RGB\" column in solarized-definitions.el to improve them further."
   :type 'boolean
   :group 'solarized)
 
+(defcustom solarized-terminal-colors-for-daemon nil
+  "If non-nil, use terminal color scheme when emacs is started as
+a daemon"
+  :type 'boolean
+  :group 'solarized)
+
 ;; FIXME: The Generic RGB colors will actually vary from device to device, but
 ;;        hopefully these are closer to the intended colors than the sRGB values
 ;;        that Emacs seems to dislike
@@ -75,7 +81,9 @@ the \"Gen RGB\" column in solarized-definitions.el to improve them further."
 
 (defun solarized-color-definitions (mode)
   (flet ((find-color (name)
-           (let* ((index (if (or window-system (daemonp))
+           (let* ((index (if (or window-system 
+                                 (and (not solarized-terminal-colors-for-daemon) 
+                                      (daemonp)))
                              (if solarized-degrade
                                  3
                                (if solarized-broken-srgb 2 1))
