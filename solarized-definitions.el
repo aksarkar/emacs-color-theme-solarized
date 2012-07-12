@@ -180,6 +180,7 @@ the \"Gen RGB\" column in solarized-definitions.el to improve them further."
              (default ((t (,@fg-base0 ,@bg-back)))) ; Normal
              (cursor ((t (,@fg-base03 ,@bg-base0)))) ; Cursor
              (error ((t (,@fmt-bold ,@fg-red)))) ; Error
+             (escape-glyph ((t (,@fg-red))))
              (escape-glyph-face ((t (,@fg-red))))
              (fringe ((t (,@fg-base01 ,@bg-base02))))
              (linum ((t (,@fg-base01 ,@bg-base02))))
