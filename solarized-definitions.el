@@ -514,6 +514,7 @@ a daemon"
              (rcirc-server ((t (,@fg-base01))))
              (rcirc-timestamp ((t (,@fg-base0))))
              (rcirc-track-nick ((t (,@fg-red ,@fmt-bold))))
+             (rcirc-url ((t (,@fmt-undr ,@fg-violet))))
              ;; flyspell
              (flyspell-duplicate ((t (,@fg-red ,@fmt-bold))))
              (flyspell-incorrect ((t (,@fg-red ,@fmt-bold))))
