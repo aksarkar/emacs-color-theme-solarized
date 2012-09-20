@@ -533,10 +533,10 @@ a daemon"
              (git-uptodate-face ((t (,@fg-base0))))
              ;; ace-jump
              (ace-jump-face-background ((t (,@fmt-none ,@fg-base0 ,@bg-back))))
-             (ace-jump-face-foreground ((t (,@fmt-stnd ,@fg-orange ,@bg-back)))))
+             (ace-jump-face-foreground ((t (,@fmt-stnd ,@fg-orange ,@bg-back))))
              ;;font-latex
              (font-latex-warning-face ((t (,@fg-red))))
-             (font-latex-sectioning-5-face ((t (,@fg-violet))))
+             (font-latex-sectioning-5-face ((t (,@fg-violet)))))
 
             ((foreground-color . ,(when (<= 16 (display-color-cells)) base0))
              (background-color . ,back)
