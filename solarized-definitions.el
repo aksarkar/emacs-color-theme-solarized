@@ -83,7 +83,7 @@ a daemon"
    capabilities, etc.")
 
 (defun solarized-color-definitions (mode)
-  (flet ((find-color (name)
+  (cl-flet ((find-color (name)
            (let* ((index (if (or window-system 
                                  (and (not solarized-terminal-colors-for-daemon) 
                                       (daemonp)))
